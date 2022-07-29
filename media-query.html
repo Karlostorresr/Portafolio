@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            color:blueviolet
+        }
+
+        .titulo{
+            font-size: 6rem;
+
+        }
+
+        .subtitulo{
+            font-size: 4rem;
+        }
+
+        /*@media (max-width: 500px){ 
+            body {
+                color: blue;
+            }
+        */
+
+        @media (orientation:landscape){
+            .titulo{
+                color:green;
+            }
+
+        @media (orientation: landscape)  and (max-height: 500px) {
+        .subtitulo {
+            color: yellow;
+        }
+        }
+        
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <hi class="titulo">Titulo</hi>
+    <h2 class="subtitulo">Subtitulo</h2>
+    
+</body>
+</html>
