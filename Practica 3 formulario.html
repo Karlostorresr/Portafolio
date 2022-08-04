@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Portafolio</title>
     <!-- Link de CDN para Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Portafolio</title>
-
     <link rel="stylesheet" href="/styles/main.css">
+    
 </head>
 
 <body>
@@ -22,31 +21,26 @@
         <div class="navbar">
             <!-- Etiqueta de navbar  -->
             <nav>
-                <!--Divisor para nuestro logo-->
-                <div class="logo">
-                    Logo
-                </div>
-
                 <!--Divisor para links-->
                 <div class="links">
-                    <a href="">Tecnologias</a>
+                    <!--Divisor para nuestro logo-->
+                    <div class="logo col-2">KT</div>
+                    <a href="#tabladetecnologias">Tecnologias</a>
                     <a href="#formulario">Contacto</a>
-                    <a href="">Redes sociales</a>
+                    <a href="#redessociales">Redes sociales</a>
                 </div>
             </nav>
-        </div>        
-        
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-2 bg-primary">Col-1</div>
-                <div class="col-6 bg-secondary">Col-2</div>
-                <div class="col-2 bg-warning">Col-3</div>
+        </div>  
+
+        <div class="card" style="width: 18rem;">
+            <img src="/Assets/WhatsApp Image 2022-07-31 at 6.46.18 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Karlos Torres</h5>
+              <p class="card-text">Full stack developer</p>
             </div>
         </div>
-
-
-        <div class="table-tec">
+ 
+        <div class="table-tec" id="tabladetecnologias">
             <h2>Tecnologias</h2>
             <table>
                 <thead>
@@ -95,9 +89,6 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre">
                 <br>
-                <label for="edad">Edad</label>
-                <input type="number" min="18" max="99" id="edad">
-                <br>
                 <label for="telefono">Telefono</label>
                 <input type="tel" id="telefono">
                 <br>
@@ -113,16 +104,16 @@
         </div>
 
 
-        <div class="social-links">
+        <div class="social-links" id="redessociales">
             <h4> Buscame en mis redes sociales</h4>
-            <ul>
-                <li><a href="https://github.com/Karlostorresr" target="blank">Github</a></li>
-                <li><a href="https://www.facebook.com/karlosDERRSJ" target="blank">Facebook</a></li>
-                <li><a href="mailto:karlos10robles94@gmail.com">Enviame un correo</a></li>
-                <li><a href="https://twitter.com/Karlostorresr?t=7w7LlhRS6Wh8kQ0TvAILxg&s=08" target="blank">Twitter</a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/karlos-torres-91b631183/" target="blank">Linkedind</a></li>
-            </ul>
+            
+            <a href="https://github.com/Karlostorresr" target="blank"><img src="/Assets/github.png">
+            </a>
+            <a href="https://www.facebook.com/karlosDERRSJ" target="blank"> <img src="Assets/Facebook.png"></a>
+            <a href="mailto:karlos10robles94@gmail.com">Enviame un correo</a>
+            <a href="https://twitter.com/Karlostorresr?t=7w7LlhRS6Wh8kQ0TvAILxg&s=08" target="blank">Twitter></a>
+                
+            <a href="https://www.linkedin.com/in/karlos-torres-91b631183/" target="blank">Linkedind</a>
             <hr>
             <p>Buscame como @Karlostorresr en todas mis redes sociales ;)</p>
         </div>
@@ -130,7 +121,12 @@
     </div>
 
     <!-- Link de CDN para Bootstrap 5 JavaScript y Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    
+<script src="/js/main.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+
 </body >
 </html >
